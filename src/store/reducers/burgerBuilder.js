@@ -1,5 +1,4 @@
 import * as actionTypes from '../actions/actionTypes';
-import { fetchOrderStart } from '../actions/order';
 import { updateObject } from '../utility';
 
 const initialState = {
