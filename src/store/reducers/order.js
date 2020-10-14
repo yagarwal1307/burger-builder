@@ -1,5 +1,5 @@
 import * as actionTypes from '../actions/actionTypes';
-import { updateObject } from '../utility';
+import { updateObject } from '../../shared/utility';
 
 const initialState = {
     orders: [],
@@ -56,7 +56,7 @@ const reducer = (state = initialState, action) => {
         case actionTypes.FETCH_ORDER_SUCCESS: return fetchOrderSuccess(state, action);
         case actionTypes.FETCH_ORDER_FAIL: return fetchOrderFail(state, action);
         default: return state;
-    };
+    }
 };
 
 export default reducer;

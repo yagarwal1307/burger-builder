@@ -19,7 +19,7 @@ import axios from '../../axios-orders';
 //     bacon: 0.7
 // };
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
 
     state = {
         purchasing: false,
@@ -27,7 +27,6 @@ class BurgerBuilder extends Component {
 
 
     componentDidMount() {
-        console.log(this.props)
         this.props.onInitIngredients();
         
     }
